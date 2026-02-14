@@ -14,6 +14,7 @@ import {
   Activity
 } from 'lucide-react';
 import Sidebar from '../../components/Sidebar';
+import WholesalerSidebar from '../../components/WholesalerSidebar';
 
 const PerformanceReports = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,25 +27,25 @@ const PerformanceReports = () => {
   };
 
   const handleViewSalesReport = () => {
-    navigate('/manufacturer/performance-reports/sales');
+    navigate('/performance-reports/sales');
   };
 
   const handleViewInventoryReport = () => {
-    navigate('/manufacturer/performance-reports/inventory');
+    navigate('/performance-reports/inventory');
   };
 
   const handleViewAttendanceReport = () => {
-    navigate('/manufacturer/performance-reports/attendance');
+    navigate('/performance-reports/attendance');
   };
 
   const handleViewProductionReport = () => {
-    navigate('/manufacturer/performance-reports/production');
+    navigate('/performance-reports/production');
   };
 
   return (
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <WholesalerSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col lg:ml-64">
@@ -54,7 +55,7 @@ const PerformanceReports = () => {
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
               <button 
-                onClick={() => navigate('/dashboard')}
+                onClick={() => navigate('/wholesaler/dashboard')}
                 className="flex items-center gap-1 hover:text-gray-900 transition-colors px-3 py-1.5 bg-gray-700 text-white rounded-lg"
               >
                 <ArrowLeft className="w-4 h-4" />

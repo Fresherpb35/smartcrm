@@ -20,7 +20,7 @@ const WholesalerSidebar = ({ isOpen, toggleSidebar }) => {
     {
       title: 'WHOLESALER',
       items: [
-        { name: 'Business Profile', icon: Building2, path: '/wholesaler/business-profile' },
+        { name: 'Business Profile', icon: Building2, path: '/wholesaler/business-setting' },
         { name: 'Dashboard', icon: LayoutDashboard, path: '/wholesaler/dashboard' },
         { name: 'Bulk Inventory Management', icon: Package, path: '/wholesaler/bulk-inventory' },
         { name: 'Inventory Management', icon: Package, path: '/wholesaler/inventory-management' },

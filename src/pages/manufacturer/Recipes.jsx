@@ -62,7 +62,7 @@ const Recipes = () => {
   };
 
   const handleProductClick = (productId) => {
-    navigate(`/recipe/${productId}`);
+    navigate(`/manufacturer/recipe/${productId}`);
   };
 
   const savedRecipes = [

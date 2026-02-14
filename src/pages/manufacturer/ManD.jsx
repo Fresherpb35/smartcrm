@@ -37,7 +37,7 @@ const Layout = ({ children, activeItem, setActiveItem }) => {
                   <p className="text-sm sm:text-base text-gray-600 mt-1">Monday, January 26, 2026</p>
                 </div>
                 <button 
-                  onClick={() => navigate('/analytics')}
+                  onClick={() => navigate('/manufacturer/analytics')}
                   className="w-full sm:w-auto bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm whitespace-nowrap"
                 >
                   Analysis

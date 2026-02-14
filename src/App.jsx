@@ -36,8 +36,22 @@ import BOMManagement from './pages/manufacturer/Bommanagement'
 import RawMaterialPlanning from './pages/manufacturer/RawMaterialPlanning'
 import WastageTracking from './pages/manufacturer/Wastagetracking'
 import AccountSetup from './pages/manufacturer/AccountSetup'
+
+
+// WHolesaler
 import WholesalerDashboard from './pages/wholesaler/Wholesalerdashboard'
 import BulkInventoryManagement from './pages/wholesaler/BulkInventoryManagement'
+import BusinessSettingss from './pages/wholesaler/BusinessSettingss'
+
+import InventoryManagementt from './pages/wholesaler/InventoryManagementt'
+import StaffDirectoryy from './pages/wholesaler/StaffDirectoryy'
+import SalesCommissionn from './pages/wholesaler/SalesCommissionn'
+import AttendanceTrackerr from './pages/wholesaler/Attendancetrackerr'
+import TaskManagementt from './pages/wholesaler/Taskmanagementt'
+import PerformanceReportss from './pages/wholesaler/PerformanceReportss'
+import TeamCommunicationn from './pages/wholesaler/Teamcommunicationn '
+import Leaderboardd from './pages/wholesaler/Leaderboardd'
+import AccountSetupp from './pages/wholesaler/AccountSetupp'
 
 function App() {
 
@@ -45,8 +59,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/manufacturer/login" element={<Login />} />
-        <Route path="/manufacturer/forgot" element={<Forgot />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot" element={<Forgot />} />
         <Route path="/manufacturer/dashboard" element={<ManD/>} />
         <Route path="/manufacturer/business-setting" element={<BusinessSettings/>} />
         <Route path="/manufacturer/addsaleinvoice" element={<AddSaleInvoice/>} />
@@ -94,8 +108,21 @@ function App() {
         {/* WHOLESALER */}
         <Route path="/wholesaler/dashboard" element={<WholesalerDashboard />} />
         <Route path="/wholesaler/bulk-inventory" element={<BulkInventoryManagement />} />
+        <Route path="/wholesaler/business-setting" element={<BusinessSettingss/>} />
+<Route path="/wholesaler/inventory-management" element={<InventoryManagementt/>} />
 
+ <Route path="/wholesaler/staff-directory" element={<StaffDirectoryy />} />
+ 
+        <Route path="/wholesaler/sales-commission" element={<SalesCommissionn/>} />
+ <Route path="/wholesaler/attendance" element={<AttendanceTrackerr />} />
 
+    <Route path="/wholesaler/tasks" element={<TaskManagementt />} />
+
+    <Route path="/wholesaler/performance-reports" element={<PerformanceReportss />} />
+
+            <Route path="/wholesaler/team-communication" element={<TeamCommunicationn />} />
+  <Route path="/wholesaler/leaderboard" element={<Leaderboardd />} />
+                   <Route path="/wholesaler/account" element={<AccountSetupp />} />
       </Routes>
     </Router>
   )

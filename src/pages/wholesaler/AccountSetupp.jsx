@@ -13,6 +13,7 @@ import {
   ChevronDown
 } from 'lucide-react';
 import Sidebar from '../../components/Sidebar';
+import WholesalerSidebar from '../../components/WholesalerSidebar';
 
 const AccountSetup = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -144,18 +145,17 @@ const AccountSetup = () => {
 
   return (
     <div className="flex h-screen bg-gray-50">
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <WholesalerSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
       <div className="flex-1 flex flex-col lg:ml-64">
-        {/* Mobile Header */}
-     
+ 
 
         <main className="flex-1 overflow-auto">
           <div className="p-4 sm:p-6 max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
               <button 
-                onClick={() => navigate('/manufacturer/dashboard')}
+                onClick={() => navigate('/wholesaler/dashboard')}
                 className="flex items-center gap-1 hover:text-gray-900 transition-colors px-3 py-1.5 bg-gray-700 text-white rounded-lg cursor-pointer"
               >
                 <ArrowLeft className="w-4 h-4" />

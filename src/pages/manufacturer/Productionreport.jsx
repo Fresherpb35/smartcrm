@@ -73,9 +73,9 @@ const ProductionReport = () => {
         {/* Header */}
         <div className="mb-6">
           <button
-            onClick={() => navigate('/performance-reports')}
+            onClick={() => navigate('/manufacturer/performance-reports')}
             className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors mb-4"
-          >
+          >a
             <ArrowLeft className="w-4 h-4" />
             <span>Back</span>
           </button>

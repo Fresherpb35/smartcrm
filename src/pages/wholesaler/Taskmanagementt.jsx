@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
+import WholesalerSidebar from '../../components/WholesalerSidebar';
 
 const TaskManagement = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -56,7 +57,7 @@ const TaskManagement = () => {
   };
 
   const handleTaskClick = (taskId) => {
-    navigate(`/manufacturer/tasks/${taskId}`);
+    navigate(`/tasks/${taskId}`);
   };
 
   // Sample task data
@@ -116,7 +117,7 @@ const TaskManagement = () => {
   return (
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <WholesalerSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col lg:ml-64">
@@ -143,14 +144,14 @@ const TaskManagement = () => {
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-sm mb-4">
               <button 
-                onClick={() => navigate('/manufacturer/dashboard')}
+                onClick={() => navigate('//wholesaler/dashboard')}
                 className="flex items-center gap-1 hover:text-gray-900 transition-colors px-3 py-1.5 bg-gray-700 text-white rounded-lg"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span>Back</span>
               </button>
               <span className="text-gray-600">/</span>
-              <span className="text-purple-600 font-medium underline">Dashboard</span>
+              <span className="text-purple-600 font-medium underline">/wholesaler/dashboard</span>
               <span className="text-gray-600">/</span>
               <span className="text-gray-900 font-medium">Task Management</span>
             </div>

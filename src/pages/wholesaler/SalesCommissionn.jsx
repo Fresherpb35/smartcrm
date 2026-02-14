@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
+import WholesalerSidebar from '../../components/WholesalerSidebar';
 
 const SalesCommission = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -60,7 +61,7 @@ const SalesCommission = () => {
   };
 
   const handleStaffClick = (staffId) => {
-    navigate(`/manufacturer/sales-commission/${staffId}`);
+    navigate(`/sales-commission/${staffId}`);
   };
 
   const commissionData = [
@@ -122,7 +123,7 @@ const SalesCommission = () => {
 
   return (
     <div className="flex h-screen bg-gray-50">
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <WholesalerSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
       <div className="flex-1 flex flex-col lg:ml-64">
         <Header onToggleSidebar={toggleSidebar} />
@@ -132,7 +133,7 @@ const SalesCommission = () => {
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-sm mb-4">
               <button 
-                onClick={() => navigate('/manufacturer/dashboard')}
+                onClick={() => navigate('/wholesaler/dashboard')}
                 className="flex items-center gap-1 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />

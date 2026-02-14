@@ -124,7 +124,7 @@ const ProductionPlanning = () => {
             {/* Header */}
             <div className="flex items-center justify-end mb-6">
               <button
-                onClick={() => navigate('/order-management')}
+                onClick={() => navigate('/manufacturer/order-management')}
                 className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm cursor-pointer"
               >
                 Order Management
@@ -298,25 +298,25 @@ const ProductionPlanning = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <button
-                  onClick={() => navigate('/create-production-plan')}
+                  onClick={() => navigate('/manufacturer/create-production-plan')}
                   className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all cursor-pointer text-left font-medium shadow-md"
                 >
                   Create Production Plan
                 </button>
                 <button
-                  onClick={() => navigate('/bom-management')}
+                  onClick={() => navigate('/manufacturer/bom-management')}
                   className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all cursor-pointer text-left font-medium shadow-md"
                 >
                   BOM Management
                 </button>
                 <button
-                  onClick={() => navigate('/raw-material-planning')}
+                  onClick={() => navigate('/manufacturer/raw-material-planning')}
                   className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all cursor-pointer text-left font-medium shadow-md"
                 >
                   Raw Material Planning
                 </button>
                 <button
-                  onClick={() => navigate('/wastage-tracking')}
+                  onClick={() => navigate('/manufacturer/wastage-tracking')}
                   className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all cursor-pointer text-left font-medium shadow-md"
                 >
                   Wastage Tracking
