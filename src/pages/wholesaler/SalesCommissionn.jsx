@@ -12,7 +12,6 @@ import {
   ChevronDown,
   Eye
 } from 'lucide-react';
-import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
 import WholesalerSidebar from '../../components/WholesalerSidebar';
 
@@ -61,7 +60,7 @@ const SalesCommission = () => {
   };
 
   const handleStaffClick = (staffId) => {
-    navigate(`/sales-commission/${staffId}`);
+    navigate(`/wholesaler/sales-commission/${staffId}`);
   };
 
   const commissionData = [

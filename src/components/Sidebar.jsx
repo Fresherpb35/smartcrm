@@ -39,7 +39,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         { name: 'Attendance Tracker', icon: ClipboardCheck, path: '/manufacturer/attendance' },
         { name: 'Staff Leaderboard', icon: BarChart3, path: '/manufacturer/leaderboard' },
         { name: 'Task Assignment', icon: ClipboardCheck, path: '/manufacturer/tasks' },
-        { name: 'CRM', icon: MessageSquare, path: '/manufacturer/tickets' }, // if this page exists
+        { name: 'CRM', icon: MessageSquare, path: '/manufacturer/crm' }, // if this page exists
         { name: 'Internal Chat', icon: MessageSquare, path: '/manufacturer/team-communication' },
         { name: 'Performance Reports', icon: TrendingUp, path: '/manufacturer/performance-reports' },
         { name: 'Account', icon: User, path: '/manufacturer/account' },

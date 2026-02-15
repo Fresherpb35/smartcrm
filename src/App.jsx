@@ -36,7 +36,7 @@ import BOMManagement from './pages/manufacturer/Bommanagement'
 import RawMaterialPlanning from './pages/manufacturer/RawMaterialPlanning'
 import WastageTracking from './pages/manufacturer/Wastagetracking'
 import AccountSetup from './pages/manufacturer/AccountSetup'
-
+import CRM from './pages/manufacturer/Crm'
 
 // WHolesaler
 import WholesalerDashboard from './pages/wholesaler/Wholesalerdashboard'
@@ -45,13 +45,24 @@ import BusinessSettingss from './pages/wholesaler/BusinessSettingss'
 
 import InventoryManagementt from './pages/wholesaler/InventoryManagementt'
 import StaffDirectoryy from './pages/wholesaler/StaffDirectoryy'
+import StaffDetaill from './pages/wholesaler/Staffdetaill'
+
 import SalesCommissionn from './pages/wholesaler/SalesCommissionn'
+import CommissionDetaill from './pages/wholesaler/Commissiondetaill'
+
 import AttendanceTrackerr from './pages/wholesaler/Attendancetrackerr'
 import TaskManagementt from './pages/wholesaler/Taskmanagementt'
 import PerformanceReportss from './pages/wholesaler/PerformanceReportss'
+import SalesReportt from './pages/wholesaler/Salesreportt'
+import InventoryReportt from './pages/wholesaler/Inventoryreportt'
+import AttendanceReportt from './pages/wholesaler/Attendancereportt'
+import ProductionReportt from './pages/wholesaler/Productionreportt'
 import TeamCommunicationn from './pages/wholesaler/Teamcommunicationn '
+import ChatConversationn from './pages/wholesaler/ChatConversationn'
+import Announcementss from './pages/wholesaler/Announcementss'
 import Leaderboardd from './pages/wholesaler/Leaderboardd'
 import AccountSetupp from './pages/wholesaler/AccountSetupp'
+import CRMM from './pages/wholesaler/Crmm'
 
 function App() {
 
@@ -88,10 +99,12 @@ function App() {
         <Route path="/manufacturer/performance-reports/attendance" element={<AttendanceReport />} />
         <Route path="/manufacturer/performance-reports/production" element={<ProductionReport />} />
 
-        <Route path="/manufacturer/notifications" element={<Notifications />} />
+        <Route path="/notifications" element={<Notifications />} />
         <Route path="/manufacturer/leaderboard" element={<Leaderboard />} />
         <Route path="/manufacturer/attendance" element={<AttendanceTracker />} />
 
+{/* crm */}
+  <Route path="/manufacturer/crm" element={<CRM />} />
         <Route path="/manufacturer/production-planning" element={<ProductionPlanning />} />
         <Route path="/manufacturer/order-management" element={<OrderManagement />} />
         <Route path="/manufacturer/create-production-plan" element={<CreateProductionPlan />} />
@@ -112,17 +125,30 @@ function App() {
 <Route path="/wholesaler/inventory-management" element={<InventoryManagementt/>} />
 
  <Route path="/wholesaler/staff-directory" element={<StaffDirectoryy />} />
+         <Route path="/wholesaler/staff-directory/:id" element={<StaffDetaill />} />
+
  
         <Route path="/wholesaler/sales-commission" element={<SalesCommissionn/>} />
+                <Route path="/wholesaler/sales-commission/:id" element={<CommissionDetaill/>} />
+        <Route path="/notifications" element={<Notifications />} />
+
  <Route path="/wholesaler/attendance" element={<AttendanceTrackerr />} />
 
     <Route path="/wholesaler/tasks" element={<TaskManagementt />} />
 
     <Route path="/wholesaler/performance-reports" element={<PerformanceReportss />} />
+    <Route path="/wholesaler/performance-reports/sales" element={<SalesReportt/>} />
+        <Route path="/wholesaler/performance-reports/inventory" element={<InventoryReportt/>} />
+        <Route path="/wholesaler/performance-reports/attendance" element={<AttendanceReportt />} />
+        <Route path="/wholesaler/performance-reports/production" element={<ProductionReportt />} />
 
             <Route path="/wholesaler/team-communication" element={<TeamCommunicationn />} />
+             <Route path="/wholesaler/team-communication/chat/:id" element={<ChatConversationn />} />
+        <Route path="/wholesaler/team-communication/announcements" element={<Announcementss />} />
   <Route path="/wholesaler/leaderboard" element={<Leaderboardd />} />
                    <Route path="/wholesaler/account" element={<AccountSetupp />} />
+                     <Route path="/wholesaler/crm" element={<CRMM/>} />
+
       </Routes>
     </Router>
   )

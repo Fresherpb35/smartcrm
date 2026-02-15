@@ -27,19 +27,19 @@ const PerformanceReports = () => {
   };
 
   const handleViewSalesReport = () => {
-    navigate('/performance-reports/sales');
+    navigate('/wholesaler/performance-reports/sales');
   };
 
   const handleViewInventoryReport = () => {
-    navigate('/performance-reports/inventory');
+    navigate('/wholesaler/performance-reports/inventory');
   };
 
   const handleViewAttendanceReport = () => {
-    navigate('/performance-reports/attendance');
+    navigate('/wholesaler/performance-reports/attendance');
   };
 
   const handleViewProductionReport = () => {
-    navigate('/performance-reports/production');
+    navigate('/wholesaler/performance-reports/production');
   };
 
   return (
