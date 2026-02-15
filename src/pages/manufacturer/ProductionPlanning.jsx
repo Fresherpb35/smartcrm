@@ -52,7 +52,7 @@ const ProductionPlanning = () => {
       <div className="flex-1 flex flex-col lg:ml-64 transition-all duration-300">
         <Header onToggleSidebar={toggleSidebar} />
 
-        <main className="flex-1 overflow-y-auto pb-6 sm:pb-10">
+        <main className="mt-14 flex-1 overflow-y-auto pb-6 sm:pb-10">
           <div className="px-4 sm:px-5 md:px-6 lg:px-8 py-5 max-w-7xl mx-auto space-y-5 sm:space-y-6 lg:space-y-8">
 
             {/* Order Management Button */}
