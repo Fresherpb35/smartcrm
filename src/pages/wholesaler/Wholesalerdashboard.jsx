@@ -15,7 +15,8 @@ import {
   Package,
   UserPlus,
   Star,
-  DollarSign
+  DollarSign,
+  BarChart2
 } from 'lucide-react';
 import WholesalerSidebar from '../../components/WholesalerSidebar';
 import Header from '../../components/Header';
@@ -153,9 +154,13 @@ const WholesalerDashboard = () => {
                 <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 italic">Welcome User!</h1>
                 <p className="text-sm text-gray-600">Monday, January 28, 2028</p>
               </div>
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm cursor-pointer">
-                Analysis
-              </button>
+             <button
+  onClick={() => navigate('/wholesaler/analytics')}
+  className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm"
+>
+  <BarChart2 className="w-4 h-4" />
+  Analysis
+</button>
             </div>
 
             {/* Stats Cards */}

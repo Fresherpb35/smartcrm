@@ -42,6 +42,7 @@ import CRM from './pages/manufacturer/Crm'
 import WholesalerDashboard from './pages/wholesaler/Wholesalerdashboard'
 import BulkInventoryManagement from './pages/wholesaler/BulkInventoryManagement'
 import BusinessSettingss from './pages/wholesaler/BusinessSettingss'
+import BusinessAnalyticss from './pages/wholesaler/BusinessAnalyticss'
 
 import InventoryManagementt from './pages/wholesaler/InventoryManagementt'
 import StaffDirectoryy from './pages/wholesaler/StaffDirectoryy'
@@ -120,6 +121,8 @@ function App() {
 
         {/* WHOLESALER */}
         <Route path="/wholesaler/dashboard" element={<WholesalerDashboard />} />
+                <Route path="/wholesaler/analytics" element={<BusinessAnalyticss />} />
+
         <Route path="/wholesaler/bulk-inventory" element={<BulkInventoryManagement />} />
         <Route path="/wholesaler/business-setting" element={<BusinessSettingss/>} />
 <Route path="/wholesaler/inventory-management" element={<InventoryManagementt/>} />
