@@ -55,7 +55,7 @@ const CreateProductionPlan = () => {
           <div className="p-4 sm:p-6 max-w-4xl mx-auto">
             {/* Back Button */}
             <button 
-              onClick={() => navigate('/production-planning')}
+              onClick={() => navigate('/manufacturer/production-planning')}
               className="flex items-center gap-1 hover:text-gray-900 transition-colors px-3 py-1.5 bg-gray-700 text-white rounded-lg mb-6 cursor-pointer"
             >
               <ArrowLeft className="w-4 h-4" />

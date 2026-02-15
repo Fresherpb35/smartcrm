@@ -61,20 +61,7 @@ const BusinessAnalytics = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col lg:ml-64">
         {/* Mobile Header */}
-        <header className="lg:hidden bg-white border-b border-gray-200 p-4 flex items-center justify-between sticky top-0 z-30">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">N</span>
-            </div>
-            <span className="font-semibold text-gray-800">Name</span>
-          </div>
-          <button
-            onClick={toggleSidebar}
-            className="p-2 hover:bg-gray-100 rounded-lg"
-          >
-            <Menu className="w-6 h-6 text-gray-600" />
-          </button>
-        </header>
+       
 
         {/* Page Content */}
         <main className="flex-1 overflow-auto">
@@ -82,7 +69,7 @@ const BusinessAnalytics = () => {
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
               <button 
-                onClick={() => navigate('/dashboard')}
+                onClick={() => navigate('/manufacturer/dashboard')}
                 className="flex items-center gap-1 hover:text-gray-900 transition-colors px-3 py-1.5 bg-gray-700 text-white rounded-lg"
               >
                 <ArrowLeft className="w-4 h-4" />
